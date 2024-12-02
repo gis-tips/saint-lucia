@@ -5,35 +5,35 @@ var map = new maplibregl.Map({
   zoom: 16, // ズームレベル
 });
 
-// スケールコントロールを追加 
+// スケールコントロールを追加
 var scale = new maplibregl.ScaleControl({
-  maxWidth: 80, // スケールの幅 
-  unit: 'metric' // メートル表記 
-}); 
-map.addControl(scale, 'bottom-right'); // 右下に配置 
+  maxWidth: 80, // スケールの幅
+  unit: 'metric' // メートル表記
+});
+map.addControl(scale, 'bottom-right'); // 右下に配置
 
-// 方位記号を追加 
-var nav = new maplibregl.NavigationControl({ 
-  visualizePitch: true // ピッチ（傾き）の表示を有効化 
-}); 
-map.addControl(nav, 'top-left'); // 左上に配置  
+// 方位記号を追加
+var nav = new maplibregl.NavigationControl({
+  visualizePitch: true // ピッチ（傾き）の表示を有効化
+});
+map.addControl(nav, 'top-left'); // 左上に配置
 
 // 現在地を取得し、地図の中心に設定
-if (navigator.geolocation) { 
+if (navigator.geolocation) {
   navigator.geolocation.getCurrentPosition(function(position) {
-    var userLocation = [position.coords.longitude, position.coords.latitude]; 
-    map.setCenter(userLocation); // 地図の中心座標を現在地に設定 
-  }, function(error) { 
-    console.error("現在地の取得に失敗しました。", error); 
-  }); 
-} else { 
-  console.error("ブラウザがGeolocation APIをサポートしていません。"); 
+    var userLocation = [position.coords.longitude, position.coords.latitude];
+    map.setCenter(userLocation); // 地図の中心座標を現在地に設定
+  }, function(error) {
+    console.error("現在地の取得に失敗しました。", error);
+  });
+} else {
+  console.error("ブラウザがGeolocation APIをサポートしていません。");
 }
 
 var popup = new maplibregl.Popup({
   offset: 25, // ポップアップの位置
   closeButton: false, // 閉じるボタンの表示
-}).setHTML('<div style="font-size: 1.5em;">George F. L. Charles Airport</div>');
+}).setHTML('<div>George F. L. Charles Airport</div>');
 
 var marker = new maplibregl.Marker().setLngLat([-60.9946090, 14.0203937]).setPopup(popup).addTo(map);
 
@@ -96,7 +96,7 @@ map.on('click', 'facility_point', (e) => {
   }
 
   // ポップアップの内容に画像を追加
-  var popupContent = `<div style="font-size: 1.5em;"><strong></strong> ${name} Bus Stop<br>
+  var popupContent = `<div><strong></strong> ${name} Bus Stop<br>
                       <img src="./tagedphoto/${name}.jpg" alt="${name}" style="width:200px;height:auto;"></div>`;
 
   // ポップアップを表示する
@@ -170,21 +170,4 @@ map.on('load', () => {
 
   // クリックイベントでポップアップを表示
   map.on('click', 'castries_bus', (e) => {
-    if (e.features.length > 0) {
-      const feature = e.features[0];
-      const coordinates = e.lngLat;
-      const routeNumber = feature.properties.Name;
-      const destination = feature.properties.description;
-
-      // ポップアップの内容を設定
-      const popupContent = `<div style="font-size: 1.5em;"><strong>Route number:</strong> ${routeNumber}<br>
-                            <strong>Destination:</strong> ${destination}</div>`;
-
-      // ポップアップを表示
-      new maplibregl.Popup()
-        .setLngLat(coordinates)
-        .setHTML(popupContent)
-        .addTo(map);
-    }
-  });
-});
+    if (e.features.length[_{{{CITATION{{{_1{](https://github.com/Jeve-Stobs/KnifeHit/tree/126284cc21893b43ddffa6d23afa4152b26d2498/scripts%2Fmain.js)

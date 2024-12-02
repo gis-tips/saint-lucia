@@ -1,9 +1,17 @@
-body {
-    margin: 0;
-    padding: 0;
+body, html, #map {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .maplibregl-popup-content {
+    font-size: 1.2em; /* スマートフォン用にフォントサイズを調整 */
   }
-  html,
-  body,
-  #map {
-    height: 100%;
+}
+
+@media screen and (min-width: 601px) {
+  .maplibregl-popup-content {
+    font-size: 1.5em; /* パソコン用にフォントサイズを調整 */
   }
+}
