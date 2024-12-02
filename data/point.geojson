@@ -1,0 +1,28 @@
+{
+"type": "FeatureCollection",
+"name": "castries_busstop",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "fid": 1.0, "ID": "1A", "Name": "1A Gros Islet", "Lon": -60.987942516805063, "Lat": 14.011728190239182 }, "geometry": { "type": "Point", "coordinates": [ -60.987942516805063, 14.011728190239182 ] } },
+{ "type": "Feature", "properties": { "fid": 2.0, "ID": "1B", "Name": "1B Babonneau", "Lon": -60.988689512015192, "Lat": 14.011824479079381 }, "geometry": { "type": "Point", "coordinates": [ -60.988689512015192, 14.011824479079381 ] } },
+{ "type": "Feature", "properties": { "fid": 3.0, "ID": "1D", "Name": "1D Grande Riviere", "Lon": -60.987900942569816, "Lat": 14.010963082437277 }, "geometry": { "type": "Point", "coordinates": [ -60.987900942569816, 14.010963082437277 ] } },
+{ "type": "Feature", "properties": { "fid": 4.0, "ID": "1E", "Name": "1E Monchy", "Lon": -60.988034689255016, "Lat": 14.01189760603695 }, "geometry": { "type": "Point", "coordinates": [ -60.988034689255016, 14.01189760603695 ] } },
+{ "type": "Feature", "properties": { "fid": 5.0, "ID": "1F", "Name": "1F Bisse", "Lon": -60.988528579513307, "Lat": 14.011834888753635 }, "geometry": { "type": "Point", "coordinates": [ -60.9885285795133, 14.011834888753635 ] } },
+{ "type": "Feature", "properties": { "fid": 6.0, "ID": "2A", "Name": "2A Bexon", "Lon": -60.988428667153997, "Lat": 14.011158913794487 }, "geometry": { "type": "Point", "coordinates": [ -60.988428667153997, 14.011158913794489 ] } },
+{ "type": "Feature", "properties": { "fid": 7.0, "ID": "2B", "Name": "2B Dennery Valley", "Lon": -60.992692708960313, "Lat": 14.009447172619048 }, "geometry": { "type": "Point", "coordinates": [ -60.992692708960313, 14.009447172619048 ] } },
+{ "type": "Feature", "properties": { "fid": 8.0, "ID": "2C", "Name": "2C Dennery Villege", "Lon": -60.992141911165447, "Lat": 14.009407257913818 }, "geometry": { "type": "Point", "coordinates": [ -60.992141911165447, 14.009407257913818 ] } },
+{ "type": "Feature", "properties": { "fid": 9.0, "ID": "2H", "Name": "2H Vieu Fort", "Lon": -60.992968976492094, "Lat": 14.008281281508369 }, "geometry": { "type": "Point", "coordinates": [ -60.992968976492094, 14.008281281508369 ] } },
+{ "type": "Feature", "properties": { "fid": 10.0, "ID": "3A", "Name": "3A la Croix Maingot", "Lon": -60.989737145723602, "Lat": 14.010287686616461 }, "geometry": { "type": "Point", "coordinates": [ -60.989737145723602, 14.010287686616461 ] } },
+{ "type": "Feature", "properties": { "fid": 11.0, "ID": "3B", "Name": "3B Jacmel", "Lon": -60.987651497101105, "Lat": 14.010407466880771 }, "geometry": { "type": "Point", "coordinates": [ -60.987651497101105, 14.010407466880771 ] } },
+{ "type": "Feature", "properties": { "fid": 12.0, "ID": "3C", "Name": "3C Millet", "Lon": -60.992142607174102, "Lat": 14.008830816253147 }, "geometry": { "type": "Point", "coordinates": [ -60.992142607174102, 14.008830816253147 ] } },
+{ "type": "Feature", "properties": { "fid": 13.0, "ID": "3D", "Name": "3D Anse la Raye", "Lon": -60.991801423324155, "Lat": 14.008174341659208 }, "geometry": { "type": "Point", "coordinates": [ -60.991801423324155, 14.008174341659208 ] } },
+{ "type": "Feature", "properties": { "fid": 14.0, "ID": "3E", "Name": "3E Canaries", "Lon": -60.988848362538562, "Lat": 14.011919498674377 }, "geometry": { "type": "Point", "coordinates": [ -60.988848362538562, 14.011919498674379 ] } },
+{ "type": "Feature", "properties": { "fid": 15.0, "ID": "3F", "Name": "3F Soufriere", "Lon": -60.988778875300511, "Lat": 14.011203562985479 }, "geometry": { "type": "Point", "coordinates": [ -60.988778875300511, 14.011203562985479 ] } },
+{ "type": "Feature", "properties": { "fid": 16.0, "ID": "5A", "Name": "5A morne Dudon", "Lon": -60.987143390032827, "Lat": 14.010850024167723 }, "geometry": { "type": "Point", "coordinates": [ -60.987143390032827, 14.010850024167723 ] } },
+{ "type": "Feature", "properties": { "fid": 17.0, "ID": "5B", "Name": "5B Rockhall", "Lon": -60.988324401101153, "Lat": 14.009784279616058 }, "geometry": { "type": "Point", "coordinates": [ -60.988324401101153, 14.009784279616058 ] } },
+{ "type": "Feature", "properties": { "fid": 18.0, "ID": "5C", "Name": "5C Fond Assau Girad", "Lon": -60.988139328661653, "Lat": 14.009576085490831 }, "geometry": { "type": "Point", "coordinates": [ -60.988139328661653, 14.009576085490831 ] } },
+{ "type": "Feature", "properties": { "fid": 19.0, "ID": "5D", "Name": "5D Forestiere", "Lon": -60.987967667282021, "Lat": 14.007647678674234 }, "geometry": { "type": "Point", "coordinates": [ -60.987967667282021, 14.007647678674234 ] } },
+{ "type": "Feature", "properties": { "fid": 20.0, "ID": "5E", "Name": "5E la Clery", "Lon": -60.988942980781466, "Lat": 14.011824479079381 }, "geometry": { "type": "Point", "coordinates": [ -60.988942980781466, 14.011824479079381 ] } },
+{ "type": "Feature", "properties": { "fid": 21.0, "ID": "5F", "Name": "5F Ciceron", "Lon": -60.988895881558641, "Lat": 14.010097867600255 }, "geometry": { "type": "Point", "coordinates": [ -60.988895881558641, 14.010097867600255 ] } }
+]
+}
