@@ -5,9 +5,18 @@ var map = new maplibregl.Map({
   zoom: 16, // ズームレベル
 });
 
+// devicePixelRatio を考慮したスケーリングの設定（変更箇所）
+let pixelRatio = window.devicePixelRatio || 1; 
+if (pixelRatio > 1) { 
+  map.setPixelRatio(1.5); // Retinaディスプレイ用にスケール調整
+} else {
+  map.setPixelRatio(1); // 通常のディスプレイ用
+}
+
+
 // スケールコントロールを追加 
 var scale = new maplibregl.ScaleControl({
-  maxWidth: 80, // スケールの幅 
+  maxWidth: 160, // スケールの幅 
   unit: 'metric' // メートル表記 
 }); 
 map.addControl(scale, 'bottom-right'); // 右下に配置 
