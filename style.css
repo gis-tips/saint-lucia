@@ -1,9 +1,15 @@
+
 body {
     margin: 0;
     padding: 0;
-  }
-  html,
-  body,
-  #map {
+}
+html,
+body,
+#map {
     height: 100%;
-  }
+}
+.mapboxgl-ctrl-button {
+    font-size: 24px; /* ボタンの文字サイズを調整 */
+    width: 40px; /* ボタンの幅を拡大 */
+    height: 40px; /* ボタンの高さを拡大 */
+}
