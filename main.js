@@ -100,7 +100,7 @@ map.on('click', 'facility_point', (e) => {
     coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
   }
 
-  var popupContent = `<div style="font-size: 4.5em;"><strong></strong> ${name} Bus Stop<br>
+  var popupContent = `<div style="font-size: 2em;"><strong></strong> ${name} Bus Stop<br>
                       <img src="./tagedphoto/${name}.jpg" alt="${name}" style="width:800px;height:auto;"></div>`;
 
   new maplibregl.Popup({
@@ -172,7 +172,7 @@ map.on('load', () => {
       const routeNumber = feature.properties.Name;
       const destination = feature.properties.description;
 
-      const popupContent = `<div style="font-size: 4.5em;"><strong>Route number:</strong> ${routeNumber}<br>
+      const popupContent = `<div style="font-size: 2em;"><strong>Route number:</strong> ${routeNumber}<br>
                             <strong>Destination:</strong> ${destination}</div>`;
 
       new maplibregl.Popup()
