@@ -1,7 +1,7 @@
 
 var map = new maplibregl.Map({
   container: 'map',
-  style: 'https://tile.openstreetmap.org/style.json', // Change to OpenStreetMap style
+  style: 'https://tile.openstreetmap.jp/styles/osm-bright-ja/style.json',
   center: [-60.9897593, 14.0110434],
   zoom: 16,
 });
