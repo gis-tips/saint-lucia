@@ -40,14 +40,13 @@ if (navigator.geolocation) {
 var popup = new maplibregl.Popup({
   offset: 25,
   closeButton: false,
-}).setHTML('<div style="font-size: 4.5em;">George F. L. Charles Airport</div>');
+}).setHTML('<div style="font-size: 2em;">George F. L. Charles Airport</div>');
 
 var marker = new maplibregl.Marker().setLngLat([-60.9946090, 14.0203937]).setPopup(popup).addTo(map);
 
-
 // Adjust icon size for small screens
-if (window.innerWidth <= 768) { // For small screens, e.g., smartphones
-  map.setLayoutProperty('facility_point', 'icon-size', 0.3); // 3x the original size
+if (window.innerWidth <= 768) { 
+  map.setLayoutProperty('facility_point', 'icon-size', 0.3); // Increase to 3x size
 }
 
 map.on('load', async () => {
@@ -76,7 +75,7 @@ map.on('load', async () => {
     source: 'facility_point',
     layout: {
       'icon-image': ['get', 'ID'],
-      'icon-size': 0.1
+      'icon-size': 0.15 // Increase default size for better visibility
     }
   });
 
@@ -100,8 +99,8 @@ map.on('click', 'facility_point', (e) => {
     coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
   }
 
-  var popupContent = `<div style="font-size: 2em;"><strong></strong> ${name} Bus Stop<br>
-                      <img src="./tagedphoto/${name}.jpg" alt="${name}" style="width:800px;height:auto;"></div>`;
+  var popupContent = `<div style="font-size: 1.5em; width: 600px;"><strong></strong> ${name} Bus Stop<br>
+                      <img src="./tagedphoto/${name}.jpg" alt="${name}" style="width:100%;height:auto;"></div>`;
 
   new maplibregl.Popup({
     offset: 10,
@@ -136,7 +135,7 @@ map.on('load', () => {
         ['5A', '5B', '5C', '5D', '5E', '5F'], '#c83939',
         '#0067c0'
       ],
-      'line-width': 8,
+      'line-width': 12, // Increase line width for better touch interaction
     },
   });
 
@@ -150,7 +149,7 @@ map.on('load', () => {
     },
     paint: {
       'line-color': '#ffff00',
-      'line-width': 7,
+      'line-width': 14, // Highlight line width
     },
     filter: ['==', 'Name', ''],
   });
