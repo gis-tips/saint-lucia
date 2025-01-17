@@ -95,7 +95,7 @@ map.on('click', 'facility_point', (e) => {
   }
 
   var popupContent = `<div style="font-size: 1.5em;"><strong></strong> ${name} Bus Stop<br>
-                      <img src="./tagedphoto/${name}.jpg" alt="${name}" style="width:400px;height:auto;"></div>`;
+                      <img src="./tagedphoto/${name}.jpg" alt="${name}" style="width:800px;height:auto;"></div>`;
 
   new maplibregl.Popup({
     offset: 10,
