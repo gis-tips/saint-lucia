@@ -44,6 +44,12 @@ var popup = new maplibregl.Popup({
 
 var marker = new maplibregl.Marker().setLngLat([-60.9946090, 14.0203937]).setPopup(popup).addTo(map);
 
+
+// Adjust icon size for small screens
+if (window.innerWidth <= 768) { // For small screens, e.g., smartphones
+  map.setLayoutProperty('facility_point', 'icon-size', 0.3); // 3x the original size
+}
+
 map.on('load', async () => {
   const iconIDs = [
     '1A', '1B', '1D', '1E', '1F', '2A', '2B',
