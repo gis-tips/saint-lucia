@@ -9,7 +9,7 @@ body,
     height: 100%;
 }
 .mapboxgl-ctrl-button {
-    font-size: 64px; /* ボタンの文字サイズを調整 */
-    width: 120px; /* ボタンの幅を拡大 */
-    height: 120px; /* ボタンの高さを拡大 */
+    font-size: 32px; /* Increase button font size */
+    width: 80px; /* Increase button width */
+    height: 80px; /* Increase button height */
 }
