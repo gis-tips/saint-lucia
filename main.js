@@ -48,6 +48,12 @@ if (Math.min(window.innerWidth, window.innerHeight) <= 768) {
   map.setLayoutProperty('facility_point', 'icon-size', 0.5); // Increase to 5x size for small screens
 }
 
+// Ensure consistent zoom level regardless of orientation changes
+let initialZoom = map.getZoom();
+map.on('resize', () => {
+    map.setZoom(initialZoom); // Maintain the initial zoom level
+});
+
 map.on('load', async () => {
   const iconIDs = [
     '1A', '1B', '1D', '1E', '1F', '2A', '2B',
@@ -180,4 +186,3 @@ map.on('load', () => {
     }
   });
 });
-
