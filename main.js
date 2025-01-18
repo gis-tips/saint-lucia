@@ -1,4 +1,3 @@
-
 var map = new maplibregl.Map({
   container: 'map',
   style: 'https://tile.openstreetmap.jp/styles/osm-bright-ja/style.json',
@@ -44,8 +43,8 @@ var popup = new maplibregl.Popup({
 
 var marker = new maplibregl.Marker().setLngLat([-60.9946090, 14.0203937]).setPopup(popup).addTo(map);
 
-// Adjust icon size and popup font size for small screens
-if (window.innerWidth <= 768) { 
+// Adjust icon size and popup font size for small screens in both orientations
+if (Math.min(window.innerWidth, window.innerHeight) <= 768) { 
   map.setLayoutProperty('facility_point', 'icon-size', 0.5); // Increase to 5x size for small screens
 }
 
@@ -75,7 +74,7 @@ map.on('load', async () => {
     source: 'facility_point',
     layout: {
       'icon-image': ['get', 'ID'],
-      'icon-size': 0.15 // Increase default size for better visibility
+      'icon-size': 0.15 // Default size for larger screens
     }
   });
 
@@ -99,7 +98,7 @@ map.on('click', 'facility_point', (e) => {
     coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
   }
 
-  var popupContent = `<div style="font-size: ${window.innerWidth <= 768 ? '6em' : '1.5em'}; width: 600px;"><strong></strong> ${name} Bus Stop<br>
+  var popupContent = `<div style="font-size: ${Math.min(window.innerWidth, window.innerHeight) <= 768 ? '6em' : '1.5em'}; width: 600px;"><strong></strong> ${name} Bus Stop<br>
                       <img src="./tagedphoto/${name}.jpg" alt="${name}" style="width:100%;height:auto;"></div>`;
 
   new maplibregl.Popup({
@@ -181,3 +180,4 @@ map.on('load', () => {
     }
   });
 });
+
